@@ -1,0 +1,505 @@
+/**
+ * Columnas scroll y
+ */
+body, html {
+  margin: 0;
+  height:100%;
+}
+
+body{
+  overflow: hidden;
+}
+
+.container-fluid, .parent{
+  height: 100%;
+}
+
+
+#left, #right{
+  height:100%;
+  overflow-y: auto;  
+}
+
+
+/*Elimina scroll from Chrome, Safari, Edge y IE*/
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+* {
+  -ms-overflow-style: none !important;
+}
+
+html { overflow: -moz-scrollbars-none; }
+
+.espacio-15 {
+    margin-top: 15px;
+}
+
+/**
+ * ============================================================================================
+ */
+
+/**
+ * =============================== NAVBAR =======================
+ */
+.navbar-default {
+  background-color:#ff1555;
+  border-color: #fff;
+  border-radius: 0px;
+  border:0px;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+   border-color:#ff1555;
+}
+
+.navbar-default .navbar-text {
+  color: #d7e2e9;
+}
+
+/**
+ * Se sobre escriben estilos de los links en navbar
+ */
+.navbar-default .navbar-nav > li > a {
+  color: #fff;
+}
+
+.nav>li>a:focus, .nav>li>a:hover {
+    text-decoration: none; 
+    background-color:#fff !important;
+    color:#ff1555 !important; 
+}
+
+.navbar-brand img {
+  height: 40px;
+  width: 100px;
+  margin-top:-10px;
+} 
+
+/**
+ * ====================== BOTONES =========================================
+ */
+
+/**
+ * Color y Forma del boton personalizado 
+ */
+.btn-custom {
+  color: #333;
+  background-color:#FFF;
+  border-color: #8d7aff;
+  border-radius: 0px;
+  font-weight: bold;
+}
+
+/**
+ * color de los botones al pasar sobre elementos
+ * con las clase btn-custom
+ */
+.btn-custom:hover {
+  background-color:#8d7aff;
+  color: #FFF;
+}
+
+/**
+ * Color de los botones al pasar sobre elementos 
+ * con las clases btn-custom y btn-block al mismo tiempo
+ */
+.btn-custom.btn-block:hover {
+  color: #333;
+  background-color:#FFF;
+}
+
+/**
+ * Color de los botones cuando esten seleccionados 
+ */
+.active-custom {
+  background-color:#8d7aff !important;
+  color: #FFF !important;
+}
+
+.btn-mostrar-filtro {
+  background-color:#f7f7f7;
+  border-color:#8d7aff;
+  color:#8d7aff; 
+  border-radius: 0px;
+  width: -15px;
+}
+
+.btn-mostrar-filtro:hover {
+   color:#8d7aff; 
+}
+
+/**
+ * personalizacion del boton en el navbar
+ */
+.btn-custom-nav {
+     border-radius: 2px;
+     background-color:#ff1555;
+     color:#FFF;
+     border-color:#FFF;
+}
+
+.btn-custom-nav:hover {
+  border-color:#ff1555;
+  color:#ff1555;
+  background-color: #FFF;
+}
+
+.btn-close-custom {
+   opacity: 1;
+   color: #8d7aff;
+   font-size: 25px;
+   margin-top:10px;
+   margin-right: 10px;
+   margin-bottom:10px;
+}
+
+/**
+ *  botón fijado hacia abajo
+ */
+.btn-custom-fixed {
+    position: fixed; 
+    width:98%; 
+    height:50px; 
+    top:90%;
+    left:1%; 
+    background: #8d7aff !important;
+    color:#fff !important;
+    z-index: 15;
+}
+
+.btn-custom-fixed img {
+    position: absolute;
+    right:3%;
+} 
+
+/**
+ * ============================ SELECT2 ===========================
+ */
+
+.select2 {
+    width:100% !important;
+ }
+
+.select2-container--default .select2-selection--multiple {
+    background-color: white;
+    border: 1px solid #aaa;
+    border-radius: 0;
+    cursor: text;
+}
+
+ .select2-container--default.select2-container--focus .select2-selection--multiple {
+    border: solid #aaa 1px;
+    outline: 0;
+} 
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+    background-color: #8d7aff;
+    color:#f7f7f7;
+    border: 1px solid #aaa;
+    border-radius: 2px;
+    cursor: default;
+    float: left;
+    margin-right: 5px;
+    margin-top: 5px;
+    padding: 0 5px;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+    color: #f7f7f7;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: bold;
+    margin-right: 2px;
+}
+
+
+
+
+/**
+ * =========================== SLIDER RANGE ===============================
+ */
+ .slider.slider-horizontal {
+     width: 100%;
+     height: 20px;
+ }
+
+.slider-handle.round {
+  background-image: -webkit-linear-gradient(top, #8d7aff 0%, #8d7aff 100%);
+}
+
+/**
+ * Cambiar color default del plugin range
+ */
+.slider-selection {
+   background: #8d7aff;
+}
+
+.slider-depto img {
+  height: 100%;
+  width: 100%;
+}
+
+/**
+ *  ======================  BOX FILTROS ====================================
+ */
+
+
+/**
+ * restar 21px de margen en la parte superior 
+ */
+.mt-21-less {
+   margin-top: -21px;
+}
+
+
+/**
+ * ============================ MEDIA QUERY ==========================
+ */
+
+  /**
+   *  Se realizo el cambio el arrow de como de ciudades
+   */
+  .select2-container--bootstrap .select2-selection--single .select2-selection__arrow b {
+    border: solid #8d7aff;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    transform: rotate(45deg);
+    padding: 3px;
+    margin-top: -5px;
+    margin-left: -7px; 
+    color:#8d7aff;
+  }
+
+  .select2-container--bootstrap.select2-container--open .select2-selection .select2-selection__arrow b {
+    border: solid #8d7aff;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    margin-top: -5px;
+    margin-left: -7px;  
+    transform: rotate(-135deg);
+    color:#8d7aff;
+  }
+  
+  /* Se removio el efecto de focus sobre el como de ciudades */
+ .select2-container--bootstrap .select2-selection {
+     background-color: #fff;
+     border: 1px solid #8d7aff; 
+     border-radius: 0px;
+     color: #555;
+     font-size: 14px;
+     font-weight: bold;
+     outline: 0;
+ } 
+ 
+ .select2-container--bootstrap.select2-container--focus .select2-selection, .select2-container--bootstrap.select2-container--open .select2-selection {
+   border-color:#8d7aff;
+   box-shadow: none;
+ }
+ 
+ .select2-container--bootstrap.select2-container--open .select2-selection {
+    border-color:#8d7aff;
+    box-shadow: none;
+ }
+ 
+ .select2-container--bootstrap .select2-dropdown {
+     border-color:#8d7aff;
+     box-shadow: none;
+ } 
+  
+
+  /**
+   * Cambia el color del elemento seleccionado del dropdown de ciudades
+   */
+ .select2-results__option--highlighted[aria-selected] {
+    background-color: #8d7aff !important;
+    color: #fff;
+}
+
+
+/**
+ *  botones con doble imagen
+ */
+.btn-concepto {
+    line-height: 50px; 
+    height: 50px; 
+    text-align: center; 
+    background: #FFF;
+    border:solid 1px#8d7aff;
+}
+
+.btn-concepto img {
+      display: inline-block; 
+      vertical-align: middle;
+      margin-right:5px
+}
+
+.btn-concepto span {
+    display: inline-block; 
+    vertical-align: middle; 
+    margin-left:5px
+}
+
+.btn-concepto  img.icon-white {
+     display: none;
+}
+
+.custom-icon-group img {
+   margin-left: 6.5px;
+} 
+
+.custom-icon-group span {
+   margin-left: 6.5px;
+}
+
+
+.slider-depto {
+   margin-top: 20px;
+   margin-bottom: 20px;
+  
+}
+
+.custom-caption {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.custom-thumbnail {
+   padding-left: 0 !important;
+   padding-right: 0 !important;
+  position:relative;
+}
+
+.prev-arrow, .next-arrow {
+    position: absolute;
+    z-index: 10;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: hsla(0,0%,100%,.2);
+    color: #fff;
+    border: none;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    outline: none;
+}
+
+.prev-arrow {
+   left: 2%;
+}
+
+.next-arrow {
+   right: 2%;
+}
+
+.box-precio {
+  position: absolute;
+  top:24%;
+  right: 3%;
+}
+
+.icon-shape {
+  position: absolute;
+  top:22%;
+  left:1%;
+}
+
+
+.box-precios {
+    margin-left: 23%;
+}
+
+.precio {
+  color:#8d7aff;
+}
+.custom-text {
+  font-weight: bold;
+}
+
+.ocultar-filtros {
+  text-decoration: underline black !important;
+  color:black !important;
+}
+
+
+.info-depto {
+   margin-top: 15px;
+   margin-bottom:30px;
+}
+
+.info-depto span {
+    color:#ff1555 !important;
+}
+
+@media only screen and (min-width : 768px) {
+     
+      #box-ciudades {
+       position: fixed;
+       width: 20%;
+       top:10%;
+       left:65%;
+       z-index: 1000;
+     }
+
+    .navbar-default .navbar-brand {
+        position: absolute;
+        left: 25%;
+        transform:translateX(-25%)
+     }
+}
+ 
+
+@media only screen and (min-width : 992px) {
+     #box-ciudades {
+      position: fixed;
+      width: 20%;
+      top:10%;
+      left:65%;
+      z-index: 1000;
+    }
+
+    .navbar-default .navbar-brand {
+       position: absolute;
+       left: 25%;
+       transform:translateX(-25%)
+    }
+}
+ 
+@media only screen and (min-width : 1200px) {
+    
+
+    .box-filtros {
+        border : solid 3px #8d7aff !important;
+        background:#f7f7f7
+    }
+
+    .navbar-default .navbar-brand {
+       position: absolute;
+       left: 25%;
+       transform:translateX(-25%)
+    }
+
+    .navbar-default .navbar-form {
+       position: absolute;
+       right: 35%;
+    }
+
+    .navbar-default .navbar-nav {
+       position: absolute;
+       right: 13.5%;
+    }
+
+    #box-ciudades {
+      position: fixed;
+      width: 20%;
+      top:10%;
+      left:65%;
+      z-index: 1000;
+    }
+} 
+
+
